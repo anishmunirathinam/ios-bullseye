@@ -51,9 +51,9 @@
 		F938B243293F8FE500CF76AC /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
-				F938B244293F8FE500CF76AC /* BullsEyeApp.swift */,
-				F938B246293F8FE500CF76AC /* BEContentView.swift */,
-				F938B248293F8FE600CF76AC /* Assets.xcassets */,
+				F938B2532940700500CF76AC /* App */,
+				F938B2552940701500CF76AC /* Model */,
+				F938B2542940700A00CF76AC /* View */,
 				F938B24A293F8FE600CF76AC /* Preview Content */,
 			);
 			path = BullsEye;
@@ -65,6 +65,30 @@
 				F938B24B293F8FE600CF76AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F938B2532940700500CF76AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F938B244293F8FE500CF76AC /* BullsEyeApp.swift */,
+				F938B248293F8FE600CF76AC /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F938B2542940700A00CF76AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F938B246293F8FE500CF76AC /* BEContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F938B2552940701500CF76AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
