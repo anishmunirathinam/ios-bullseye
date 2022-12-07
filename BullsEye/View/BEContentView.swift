@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BEContentView: View {
 
+    @State private var game = BEGame()
     @State private var showAlert = false
     @State private var sliderValue = 50.0
     
@@ -20,7 +21,7 @@ struct BEContentView: View {
                 .font(.footnote)
                 .multilineTextAlignment(.center)
                 .lineSpacing(4.0)
-            Text("79")
+            Text("\(game.target)")
                 .font(.largeTitle)
                 .fontWeight(.black)
             HStack {
@@ -35,9 +36,12 @@ struct BEContentView: View {
                 Text("Hit Me")
             }
             .alert("🎉 Score", isPresented: $showAlert) {
-                
+                Button("Next Round") {
+                    print("Start next round...")
+                }
             } message: {
-                Text("Your score will be displayed here!")
+                let value = Int(sliderValue)
+                Text("Great! Your have scored \(game.points(sliderValue: value)) in round: \(game.round)")
             }
         }
     }
