@@ -10,6 +10,7 @@ import SwiftUI
 struct BEContentView: View {
 
     @State private var showAlert = false
+    @State private var sliderValue = 50.0
     
     var body: some View {
         VStack {
@@ -24,7 +25,7 @@ struct BEContentView: View {
                 .fontWeight(.black)
             HStack {
                 Text("1")
-                Slider(value: .constant(50.0), in: 1...100)
+                Slider(value: $sliderValue, in: 1...100)
                 Text("100")
             }
             Button {
