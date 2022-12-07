@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F938B245293F8FE500CF76AC /* BullsEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938B244293F8FE500CF76AC /* BullsEyeApp.swift */; };
-		F938B247293F8FE500CF76AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938B246293F8FE500CF76AC /* ContentView.swift */; };
+		F938B247293F8FE500CF76AC /* BEContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938B246293F8FE500CF76AC /* BEContentView.swift */; };
 		F938B249293F8FE600CF76AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F938B248293F8FE600CF76AC /* Assets.xcassets */; };
 		F938B24C293F8FE600CF76AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F938B24B293F8FE600CF76AC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		F938B241293F8FE500CF76AC /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F938B244293F8FE500CF76AC /* BullsEyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeApp.swift; sourceTree = "<group>"; };
-		F938B246293F8FE500CF76AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F938B246293F8FE500CF76AC /* BEContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BEContentView.swift; sourceTree = "<group>"; };
 		F938B248293F8FE600CF76AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F938B24B293F8FE600CF76AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				F938B244293F8FE500CF76AC /* BullsEyeApp.swift */,
-				F938B246293F8FE500CF76AC /* ContentView.swift */,
+				F938B246293F8FE500CF76AC /* BEContentView.swift */,
 				F938B248293F8FE600CF76AC /* Assets.xcassets */,
 				F938B24A293F8FE600CF76AC /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F938B247293F8FE500CF76AC /* ContentView.swift in Sources */,
+				F938B247293F8FE500CF76AC /* BEContentView.swift in Sources */,
 				F938B245293F8FE500CF76AC /* BullsEyeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
