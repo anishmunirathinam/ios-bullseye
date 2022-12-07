@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BEContentView: View {
+
+    @State private var showAlert = false
+    
     var body: some View {
         VStack {
             Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
@@ -26,10 +29,15 @@ struct BEContentView: View {
             }
             Button {
                 print("Hit me!")
+                showAlert = true
             } label: {
                 Text("Hit Me")
             }
-
+            .alert("🎉 Score", isPresented: $showAlert) {
+                
+            } message: {
+                Text("Your score will be displayed here!")
+            }
         }
     }
 }
