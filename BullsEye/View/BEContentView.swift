@@ -15,40 +15,18 @@ struct BEContentView: View {
     
     var body: some View {
         VStack {
-            Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
-                .kerning(2.0)
-                .bold()
-                .font(.footnote)
-                .multilineTextAlignment(.center)
-                .lineSpacing(4.0)
-            Text("\(game.target)")
-                .font(.largeTitle)
-                .fontWeight(.black)
-            HStack {
-                Text("1")
-                Slider(value: $sliderValue, in: 1...100)
-                Text("100")
-            }
-            Button {
-                print("Hit me!")
-                showAlert = true
-            } label: {
-                Text("Hit Me")
-            }
-            .alert("🎉 Score", isPresented: $showAlert) {
-                Button("Next Round") {
-                    print("Start next round...")
-                }
-            } message: {
-                let value = Int(sliderValue)
-                Text("Great! Your have scored \(game.points(sliderValue: value)) in round: \(game.round)")
-            }
+            BEInstructionLabelTextView(text: "🎯🎯🎯\nput the bullseye as close as you can to".uppercased())
+            BETargetLabelTextView(text: "\(game.target)")
+            BESliderView(sliderValue: $sliderValue)
+            BEHitMeButtonView(game: $game, showAlert: $showAlert, sliderValue: $sliderValue)
         }
+        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         BEContentView()
+        BEContentView().previewInterfaceOrientation(.landscapeLeft)
     }
 }

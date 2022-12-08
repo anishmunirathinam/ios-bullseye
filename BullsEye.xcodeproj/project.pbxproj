@@ -12,6 +12,9 @@
 		F938B249293F8FE600CF76AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F938B248293F8FE600CF76AC /* Assets.xcassets */; };
 		F938B24C293F8FE600CF76AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F938B24B293F8FE600CF76AC /* Preview Assets.xcassets */; };
 		F938B257294070C500CF76AC /* BEGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938B256294070C500CF76AC /* BEGame.swift */; };
+		F938B27D2941B19500CF76AC /* BEButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938B27C2941B19500CF76AC /* BEButtonView.swift */; };
+		F938B27F2941B28600CF76AC /* BESliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938B27E2941B28600CF76AC /* BESliderView.swift */; };
+		F938B2812941B34500CF76AC /* BETextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F938B2802941B34500CF76AC /* BETextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		F938B248293F8FE600CF76AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F938B24B293F8FE600CF76AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F938B256294070C500CF76AC /* BEGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BEGame.swift; sourceTree = "<group>"; };
+		F938B27C2941B19500CF76AC /* BEButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BEButtonView.swift; sourceTree = "<group>"; };
+		F938B27E2941B28600CF76AC /* BESliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BESliderView.swift; sourceTree = "<group>"; };
+		F938B2802941B34500CF76AC /* BETextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BETextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				F938B246293F8FE500CF76AC /* BEContentView.swift */,
+				F938B2802941B34500CF76AC /* BETextView.swift */,
+				F938B27C2941B19500CF76AC /* BEButtonView.swift */,
+				F938B27E2941B28600CF76AC /* BESliderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,9 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F938B2812941B34500CF76AC /* BETextView.swift in Sources */,
 				F938B247293F8FE500CF76AC /* BEContentView.swift in Sources */,
 				F938B257294070C500CF76AC /* BEGame.swift in Sources */,
 				F938B245293F8FE500CF76AC /* BullsEyeApp.swift in Sources */,
+				F938B27D2941B19500CF76AC /* BEButtonView.swift in Sources */,
+				F938B27F2941B28600CF76AC /* BESliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
