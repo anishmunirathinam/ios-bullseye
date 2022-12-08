@@ -27,6 +27,12 @@ struct BEContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         BEContentView()
-        BEContentView().previewInterfaceOrientation(.landscapeLeft)
+        BEContentView()
+            .previewInterfaceOrientation(.landscapeLeft)
+        BEContentView()
+            .preferredColorScheme(.dark)
+        BEContentView()
+            .previewInterfaceOrientation(.landscapeLeft)
+            .preferredColorScheme(.dark)
     }
 }
