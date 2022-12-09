@@ -14,13 +14,16 @@ struct BEContentView: View {
     @State private var sliderValue = 50.0
     
     var body: some View {
-        VStack {
-            BEInstructionLabelTextView(text: "🎯🎯🎯\nput the bullseye as close as you can to".uppercased())
-            BETargetLabelTextView(text: "\(game.target)")
+        ZStack {
+            BEBackgroundView(game: $game)
+            VStack {
+                BEInstructionLabelTextView(text: "\(game.target)")
+                    .padding(.bottom, 100.0)
+                BEHitMeButtonView(game: $game, showAlert: $showAlert, sliderValue: $sliderValue)
+            }
+            .padding()
             BESliderView(sliderValue: $sliderValue)
-            BEHitMeButtonView(game: $game, showAlert: $showAlert, sliderValue: $sliderValue)
         }
-        .padding()
     }
 }
 

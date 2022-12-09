@@ -16,4 +16,10 @@ struct BEGame {
     func points(sliderValue: Int) -> Int {
         100 - abs(target - sliderValue)
     }
+
+    mutating func startNewRound(sliderValue: Int) {
+        score += points(sliderValue: sliderValue)
+        round += 1
+        target = Int.random(in: 1...100)
+    }
 }

@@ -14,6 +14,7 @@ struct BESliderLabelTextView: View {
     var body: some View {
         Text(text)
             .frame(width: 35)
+            .foregroundColor(Color("BETextColor"))
     }
 }
 
@@ -25,6 +26,7 @@ struct BETargetLabelTextView: View {
         Text(text)
             .font(.largeTitle)
             .fontWeight(.black)
+            .foregroundColor(Color("BETextColor"))
     }
 }
 
@@ -33,12 +35,16 @@ struct BEInstructionLabelTextView: View {
     var text: String
     
     var body: some View {
-        Text(text)
-            .kerning(2.0)
-            .bold()
-            .font(.footnote)
-            .multilineTextAlignment(.center)
-            .lineSpacing(4.0)
+        VStack {
+            Text("🎯🎯🎯\nput the bullseye as close as you can to".uppercased())
+                .kerning(2.0)
+                .bold()
+                .font(.footnote)
+                .multilineTextAlignment(.center)
+                .lineSpacing(4.0)
+                .foregroundColor(Color("BETextColor"))
+            BETargetLabelTextView(text: text)
+        }
     }
 }
 

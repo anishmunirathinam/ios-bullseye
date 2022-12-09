@@ -15,14 +15,28 @@ struct BEHitMeButtonView: View {
     
     var body: some View {
         Button {
-            print("Hit me!")
             showAlert = true
         } label: {
             Text("Hit Me")
+                .foregroundColor(Color.white)
+                .bold()
         }
+        .padding()
+        .background(
+            ZStack {
+                Color("BEHitMeButtonColor")
+                LinearGradient(colors: [Color.white.opacity(0.5), Color.clear], startPoint: .top, endPoint: .bottom)
+            }
+        )
+        .cornerRadius(21.0)
+        .overlay(
+            RoundedRectangle(cornerRadius: 21.0)
+                .strokeBorder(Color.white, lineWidth: 2.0)
+        )
         .alert("🎉 Score", isPresented: $showAlert) {
             Button("Next Round") {
-                print("Start next round...")
+                game.startNewRound(sliderValue: Int(sliderValue))
+                
             }
         } message: {
             let value = Int(sliderValue)
